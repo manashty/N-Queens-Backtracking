@@ -160,44 +160,7 @@ namespace ARMNQueens
                     return FindNextPromising(index + 1, true);//Found a promising place, Find the next one
             }
             return FindNextPromising(index - 1, false);//Found Nothing, Change Previous
-
-
-
-            //Find All
-            ////if (index == -1)//Nothing Has Been Found and Reached Zero Already
-            ////    return -2;
-            ////if (index == queens.Count)
-            ////{
-            ////    queensAll.Add(queens.ToList<int>());
-            ////    return 0;//Already a Solution and gone further than the last one
-            ////}
-            ////for (queens[index] = reset ? 0 : (queens[index] + 1); queens[index] < queens.Count; queens[index]++)// Search the places from the index Place to the possible number of places
-            ////{
-            ////    int result;
-            ////    if (IsPromising(index))
-            ////    {
-            ////        result = FindNextPromising(index + 1, true/*(index + 1 >= startingIndex) ? true : false, startingIndex*/);//Found a promising place, Find the next one
-            ////        if (result >=-1 )
-            ////            continue;
-            ////        else
-            ////            return result;
-            ////    }
-            ////}
-            ////return -1;//Found Nothing, Change Previous
-
-
-
-
-            /*if (IsPromising(index))
-                if (index == queens.Count)
-                    MessageBox.Show("Done");
-                else
-                    for (int i = 0; i < queens.Count - 1; i++)
-                    {
-                        queens[index + 1] = i;
-                        FindNextPromising(index + 1, reset);
-                    }           
-             */
+                                    
         }
         public static Int64 numOfPromisingCheck = 0;
         public static Int64 numOfPromising = 0;
@@ -475,7 +438,7 @@ namespace ARMNQueens
             queens[18] = 6;
             queens[19] = 7;
             DrawAll(false);
-            MessageBox.Show("Created by:\nAli Reza Manashty\n     (ARM)\n May 2009 \n www.ARM7.ir\n ARM7@YMail.com\n Tel:09355332577");
+            MessageBox.Show("Created by:\nAlireza Manashty\n     (ARM)\n May 2009 \n ARM7@YMail.com\n");
         }
 
         private void ARMNQueens_FormClosing(object sender, FormClosingEventArgs e)
